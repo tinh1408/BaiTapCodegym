@@ -29,6 +29,8 @@ public class Main {
                     System.out.println("Thang 2 co 28 ngay");
                 }
                 break;
+            default:
+                System.out.println("Invalid month");
         }
     }
 }
