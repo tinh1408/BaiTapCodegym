@@ -3,33 +3,27 @@ import java.util.Scanner;
 public class Main {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        int kichThuoc;
+        System.out.print("Nhập chuỗi: ");
+        String str = sc.nextLine();
+        char[] array = str.toCharArray();
+        String input;
         boolean kiemTra;
-        //Nhập mảng
         do {
-            System.out.print("Nhap so phan tu cua mang: ");
-            kichThuoc = sc.nextInt();
-            if (kichThuoc <= 0) {
+            System.out.print("Nhập kí tự cần kiểm tra: ");
+            input = sc.next();
+            if (input.length()!=1){
+                System.out.println("Vui lòng nhập 1 kí tự");
                 kiemTra = true;
-            } else kiemTra = false;
-        } while (kiemTra);
-        int[] array = new int[kichThuoc];
-        System.out.println("Nhap lan luot cac phan tu trong mang: ");
-        nhapMang(array);
-        //Đếm số lần xuất hiện
-        System.out.println("Nhập số cần kiểm tra: ");
-        int so = sc.nextInt();
-        int count = 0;
+            }else kiemTra = false;
+        }while (kiemTra);
+        char x = input.charAt(0);
+
+        int count =0;
         for (int i=0; i<array.length; i++){
-            if (so==array[i]){
+            if (x == array[i]){
                 count++;
             }
         }
-        System.out.println("Số "+so+" xuất hiện "+count+" lần");
-    }
-    public static void nhapMang(int[] mang){
-        for (int i=0; i<mang.length; i++){
-            mang[i] = sc.nextInt();
-        }
+        System.out.print("Kí tự xuất hiện "+count+" lần");
     }
 }
