@@ -10,7 +10,7 @@ public class Main {
             System.out.print("Nhập kích thước bàn cờ caro tương ứng: hàng x cột: ");
             rowCaroMax = sc.nextInt();
             colCaroMax = sc.nextInt();
-            if (rowCaroMax <= 0 || colCaroMax <= 0) {
+            if (rowCaroMax <5 || colCaroMax <5) {
                 kiemTra = true;
             } else kiemTra = false;
         } while (kiemTra);
