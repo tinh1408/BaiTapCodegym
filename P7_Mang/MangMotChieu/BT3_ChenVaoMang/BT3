@@ -40,3 +40,4 @@ public class Main {
         }
     }
 }
+// anh nhập vào giá trị vào vị trí đầu tiên thì mảng bị mất 1 giá trị, em kiểm tra lại trường hợp này để hoàn thiện code nhé
