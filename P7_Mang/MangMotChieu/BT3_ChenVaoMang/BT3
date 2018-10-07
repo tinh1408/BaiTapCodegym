@@ -40,3 +40,5 @@ public class Main {
         }
     }
 }
+
+// anh chèn vào 1 giá trị ở vị trí đầu tiên thì mảng bị mất 1 giá trị ban đầu, em bổ sung điều kiện để code hoàn thiện hơn nha
