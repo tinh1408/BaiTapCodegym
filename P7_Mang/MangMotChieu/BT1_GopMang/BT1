@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Main {
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); // em không nên khai báo biến scanner toàn cục
     public static void main(String[] args) {
         int[] array1, array2;
         int kichThuocMang1, kichThuocMang2;
