@@ -20,4 +20,18 @@ public class B1 {
         }
         return strNguoc;
     }
+      /* Thuật toán của em đúng nhưng cần chỉnh sửa 1 tí để có thuật toán tối ưu hơn
+    bằng cách không cần khởi tạo 1 mảng mới, việc khởi tạo sẽ chiếm bộ nhớ*/
+
+    public static  boolean kiemTra(){
+        for(int i = 0; i<str.length();i++){
+                if(str.charAt(i) != str.charAt(str.length()-i-1)){
+                    isPa = false;
+                    break;
+                }else{
+                    isPa = true;
+                }
+            }
+         return isPa;
+    }
 }
